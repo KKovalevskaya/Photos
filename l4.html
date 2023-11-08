@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы и ссылки</title>
+</head>
+<body>
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" width="600px">
+
+    <tr>
+        <td>Задания с использованием DOM и JS</td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <ul>
+                <li><a href="./layout.html" target="_self"><b>Изменяем кириллицу на латиницу по клику</b></a>
+                <li><a href="./l2.html" target="_self"><b>DOM_JS. Считываем информацию из DOM</b> </a>
+                <li><a href="./l3.html" target="_self"><b>Решение алгоритмической задачи</b></a>
+                <li><a href="./l4.html" target="_self"><b>Форма для отправки алгоритмической задачи</b></a>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <!--Уникально содержание страницы-->
+            <h3 align="center" id="start">Форма для отправки алгоритмической задачи</h3>
+<p>Определить, какое вещественное число: положительное, отрицательное, ноль</p>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <ul>
+        <li>для поисковика:<input name="q" value="search"></li>
+        <li>формулировка задачи <input name="formulation" value="Определить, какое вещественное число: положительное, отрицательное, ноль"></li>
+        <li>Вещественное число: <input id="number" name="number" type="number" value="-5.7"></li>
+        <li>результат решения: <input name="result" value="не определен"></li>
+        <li>действие 1: <input id="determine" type="button" value="Определить"></li>
+        <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+    </ul>
+</form>
+<p id="result">Результаты вычислений:  </p>
+<script src="./l4.js"></script>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

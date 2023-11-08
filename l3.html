@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы и ссылки</title>
+</head>
+<body>
+
+<table align="center" border=1 cellpadding="5" cellspacing="1" width="600px">
+
+    <tr>
+        <td>Задания с использованием DOM и JS</td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <ul>
+                <li><a href="./layout.html" target="_self"><b>Изменяем кириллицу на латиницу по клику</b></a>
+                <li><a href="./l2.html" target="_self"><b>DOM_JS. Считываем информацию из DOM</b> </a>
+                <li><a href="./l3.html" target="_self"><b>Решение алгоритмической задачи</b></a>
+                <li><a href="./l4.html" target="_self"><b>Форма для отправки алгоритмической задачи</b></a>
+            </ul>
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            <!--Уникально содержание страницы-->
+            <h3 align="center" id="start">Форма для отправки алгоритмической задачи</h3>
+<p>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью
+объёма M первую ёмкость, вторую, обе.
+</p>
+  <script src="l3.js"></script>
+
+  <h3>Проверка ёмкостей</h3>
+
+            <p>Значение A: <span id="a">5</span></p>
+            <p>Значение H: <span id="h">4</span></p>
+            <p>Значение R: <span id="r">3</span></p>
+            <p>Значение M: <span id="m">2</span></p>
+
+  <button onclick="checkAndDisplayCapacity()">Проверить ёмкости</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAndDisplayCapacity() {
+      var A = 5;
+      var H = 3;
+      var R = 2;
+      var M = 1;
+
+      var result = checkCapacity(A, H, R, M);
+      document.getElementById("result").textContent = result;
+    }
+  </script>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
